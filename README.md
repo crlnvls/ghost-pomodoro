@@ -11,7 +11,7 @@
 
 - User Finish Task - Confetti API
 - Timer Finish - Boo Sound and Ghost moving around the screen
-- Possible motivational - Quotes API
+- Possible motivational messages - Quotes API
 - Possible background music / Add a playlist - Spotify API
 
 
