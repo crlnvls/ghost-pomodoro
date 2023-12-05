@@ -1,9 +1,8 @@
 # Ghost Pomodoro 👻
 
-## Process 
 
-### 💡 Idea
-### 🎨 Design
+
+##  🎨 Design
 
 <img src="./public/design.jpg" alt="sketch of the app" width="450px">
 
