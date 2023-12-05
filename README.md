@@ -20,9 +20,9 @@
 ## Demo
 ## Inspiration  
 
-- (Pomodoro Kitty)[https://pomodorokitty.com/]
-- (Pomofocus)[https://pomofocus.io/]
-- (Viki-code)[https://codepen.io/viki-code/pen/gOqbjLN]
+- [Pomodoro Kitty](https://pomodorokitty.com/)
+- [Pomofocus](https://pomofocus.io/)
+- [Viki-code](https://codepen.io/viki-code/pen/gOqbjLN])
 
 ## License
 
