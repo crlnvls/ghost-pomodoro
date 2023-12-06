@@ -1,12 +1,11 @@
 import React from "react";
 
-import "./NavButton.module.css";
+import "./NavButton.css"
 
-
-const NavButton = () => {
+const NavButton = (props) => {
   return (
     <>
-    <button>Click me</button>
+    <button className="nav-btn">{props.children}</button>
     </>
   );
 };

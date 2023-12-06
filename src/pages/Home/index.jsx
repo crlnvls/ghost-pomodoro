@@ -1,14 +1,13 @@
 import React from "react";
 
-import "./Home.module.css";
-import "../../components/NavButton"
+import "./Home.css";
 import NavButton from "../../components/NavButton";
 
 const Home = () => {
   return (
     <>
-    <NavButton/>
-    <NavButton/>
+    <NavButton>History</NavButton>
+    <NavButton>Settings</NavButton>
     <h1>Ghost Pomodoro 👻</h1>
     </>
   );
