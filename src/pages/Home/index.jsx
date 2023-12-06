@@ -2,6 +2,7 @@ import React from "react";
 
 import "./Home.css";
 import NavButton from "../../components/NavButton";
+import Ghost from "../../components/Ghost";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
      
 </div>
     <h1>Ghost Pomodoro 👻</h1>
+<Ghost></Ghost>
     </>
   );
 };
