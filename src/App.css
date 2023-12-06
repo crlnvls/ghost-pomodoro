@@ -1,5 +1,10 @@
+:root {
+    --bg-color:rgba(0, 0, 0, 0.937);
+    --font-color: rgb(240, 248, 255);
+}
+
 body {
-    background-color: rgba(0, 0, 0, 0.937);
-    color: rgb(240, 248, 255);
+    background-color: var(--bg-color);
+    color: var(--font-color)
 }
 
