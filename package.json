@@ -17,6 +17,7 @@
     "react-router-dom": "^6.20.1"
   },
   "devDependencies": {
+    "styled-components": "^6.1.1",
     "vite": "^5.0.4"
   }
 }
