@@ -5,7 +5,11 @@ import "./NavButton.css"
 const NavButton = (props) => {
   return (
     <>
-    <button className="nav-btn">{props.children}</button>
+    <div className="center-btn">
+  
+        <button className="nav-btn">{props.children}</button>
+   
+    </div>
     </>
   );
 };
