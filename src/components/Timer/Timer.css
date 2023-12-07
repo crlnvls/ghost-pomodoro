@@ -4,7 +4,13 @@
     text-align: center;
     border-radius: 10px;
     color: var(--font-color);
-    width: 400px;
+    width: 50vw;
     border: 2px solid var(--font-color);
     background-color: black;
+}
+
+@media only screen and (min-width: 800px) {
+    .timer-display{
+        width: 450px;
+    }
 }
