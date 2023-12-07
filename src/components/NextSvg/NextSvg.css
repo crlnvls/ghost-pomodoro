@@ -8,7 +8,7 @@
 }
 
 .next-svg path:hover {
-    fill: rgb(128, 131, 134);
+    fill: var(--hover-color);
 }
 
 
