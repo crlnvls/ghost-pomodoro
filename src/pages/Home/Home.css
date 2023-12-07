@@ -7,9 +7,8 @@
 
 @media only screen and (max-width: 800px) {
     .center-btn {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-    
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
     .border-right{
@@ -22,8 +21,6 @@
         border-bottom: 2px solid var(--font-color);
     }
 }
-
-
 
 .center-display{
     width: 100%;
