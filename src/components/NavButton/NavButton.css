@@ -1,6 +1,5 @@
 .nav-btn {
   align-items: center;
-  background-clip: padding-box;
   background-color:black;
   color: var(--font-color);
   cursor: pointer;
