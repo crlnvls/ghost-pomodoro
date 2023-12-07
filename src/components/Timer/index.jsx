@@ -1,8 +1,8 @@
 import React from "react";
 
-
 import "./Timer.css"
 import NextSvg from "../NextSvg";
+import TimerButton from "../TimerButton";
 
 
 const Timer = () => {
@@ -20,9 +20,11 @@ const Timer = () => {
             <div className="time">
              25:00
             </div>
+      <div className="center-timer-btn">
+        <TimerButton>Start</TimerButton>
+        <TimerButton>Reset</TimerButton>
       </div>
-     
- 
+      </div>
     </>
   );
 };
