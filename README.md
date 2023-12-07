@@ -22,7 +22,7 @@
 
 - [Pomodoro Kitty](https://pomodorokitty.com/)
 - [Pomofocus](https://pomofocus.io/)
-- [Viki-code](https://codepen.io/viki-code/pen/gOqbjLN])
+- [Viki-code Ghost](https://codepen.io/viki-code/pen/gOqbjLN)
 
 ## ⚖️ License
 
