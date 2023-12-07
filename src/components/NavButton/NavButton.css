@@ -19,7 +19,9 @@
   .nav-btn{
     width: 100%;
     padding: 14px;
-    border:none
+    border:none;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
   }
 }
 
