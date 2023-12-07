@@ -17,6 +17,7 @@ const Ghost = () => {
     </div>
   </div>
 </div>
+    
     </>
   );
 };
