@@ -14,3 +14,23 @@
         width: 450px;
     }
 }
+
+.type {
+    font-size: 25px;
+}
+
+.time {
+    font-size: 100px;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 400px) {
+   .time{
+    font-size: 10vh;
+   }
+}
