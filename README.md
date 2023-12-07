@@ -12,6 +12,7 @@
 - When user finishes a task - use confetti and possible motivational quotes from APIs
 - When timer finishes - create a Boo Sound and Ghost moving around the screen to alert users
 - Possibility to add music and/or add a playlist from Spotify API
+- When user click ghost - make it move
 
 ## ⚙️ Installation & Usage
 
