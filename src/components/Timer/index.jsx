@@ -5,9 +5,9 @@ import "./Timer.css"
 const Timer = () => {
   return (
     <>
-        <div class="timer-display">
-            <div class="type">Pomodoro</div>
-            <div class="time">25:00</div>
+        <div className="timer-display">
+            <div className="type">Pomodoro</div>
+            <div className="time">25:00</div>
         </div>
  
     </>
