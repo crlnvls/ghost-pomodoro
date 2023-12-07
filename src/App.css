@@ -1,3 +1,7 @@
+* {
+    margin: 0;
+}
+
 :root {
     --bg-color:rgba(0, 0, 0, 0.937);
     --font-color: rgb(240, 248, 255);
