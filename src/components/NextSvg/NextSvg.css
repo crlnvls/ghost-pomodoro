@@ -1,0 +1,14 @@
+.next-svg {
+    width: 25px;
+    height: 25px;
+}
+
+.next-svg path {
+    fill: var(--font-color);
+}
+
+.next-svg path:hover {
+    fill: rgb(128, 131, 134);
+}
+
+
