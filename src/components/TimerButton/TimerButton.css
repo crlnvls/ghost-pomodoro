@@ -1,0 +1,23 @@
+.timer-btn {
+    background-color: var(--font-color);
+    color: black;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 800;
+    width: 100%;
+    padding: 14px 100px;
+    border: none;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.timer-btn:hover {
+   background-color: var(--hover-color);
+}
+
+@media only screen and (max-width: 800px) {
+    .timer-btn {
+        padding: 4% 23%;
+    }
+}
+
