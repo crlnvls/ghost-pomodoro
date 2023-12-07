@@ -7,8 +7,8 @@ import "./NextSvg.css"
 const NextSvg = () => {
   return (
     <>
-     <svg className="next-svg" fill="#000000" height="800px" width="800px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-	    viewBox="0 0 512 512" xml:space="preserve">
+     <svg className="next-svg" fill="#000000" height="800px" width="800px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" 
+	    viewBox="0 0 512 512" xmlSpace="preserve">
       <g>
 	      <g>
 		      <path d="M480,0c-11.776,0-21.333,9.557-21.333,21.333v210.325L42.283,2.645c-6.613-3.627-14.656-3.52-21.141,0.32
