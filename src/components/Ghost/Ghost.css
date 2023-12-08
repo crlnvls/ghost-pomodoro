@@ -7,7 +7,7 @@
     position: relative;
     transform-origin: center;
     animation: float 3s ease-out infinite;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
   }
   
   .ghost__eyes {
@@ -28,45 +28,28 @@
     clip-path: none;
     transition: .1s;
   }
-  
-  .ghost__mouth {
-    width: 44px;
-    height: 8px;
-    background: #ccc;
-    border-radius: 10px;
-    margin: 16px auto 0;
-    position: relative;
-    animation: sleep 3s ease-out infinite;  
-    transition: .1s;
-  }
-  
-  
+
   .ghost__waves {
-    display: flex;
-    position: absolute;
-    bottom: -20px;
-    height: 50px;
-    width: 100%;
-    overflow: hidden;
-  }
+      display: flex;
+      position: absolute;
+      bottom: -34px;
+      height: 50px;
+      width: 100%;
+      overflow: hidden;
+    }
   
-  .ghost__wave {
-    width: 117px;
-    height: 50px;
-    background: #fff;
-    flex-shrink: 0;  
-    
-    animation: ghost 3s linear infinite;   
-    transform: translateX(-117px);
-    
-    --size: 10px;
-    --p: 5px;
-    --R: 11.18px;
-  
-    -webkit-mask:
-      radial-gradient(var(--R) at 50% calc(100% - (var(--size) + var(--p))),blue 99%,#0000 101%) calc(50% - 2*var(--size)) 0/calc(4*var(--size)) 100%,
-      radial-gradient(var(--R) at 50% calc(100% + var(--p)),#0000 99%,red 101%) 50% calc(100% - var(--size))/calc(4*var(--size)) 100% repeat-x;  
-  }
+ .ghost__wave {
+   width: 117px;
+   height: 50px;
+   flex-shrink: 0;
+
+   animation: ghost 3s linear infinite;
+   transform: translateX(-117px);
+
+   --size: 10px;
+   --p: 5px;
+   --R: 11.18px;
+ }
   
   @keyframes ghost {
     0% {
@@ -76,7 +59,6 @@
       transform: translateX(0);
     }
   }
-  
   
   
   @keyframes float {
