@@ -2,7 +2,7 @@ import React from "react";
 
 import "./Timer.css"
 import NextSvg from "../NextSvg";
-import TimerButton from "../TimerButton";
+import Button from "../Button";
 
 
 const Timer = () => {
@@ -10,8 +10,14 @@ const Timer = () => {
     <>
       <div className="timer-display">
         <div className="type-display">
-            <div className="type">
-              Pomodoro
+            <div className="type line">
+              pomodoro
+          </div>
+          <div className="hide">
+              short break
+          </div>
+          <div className="hide">
+              long break
             </div>
           <button className="next-btn">
              <NextSvg/>
@@ -21,10 +27,11 @@ const Timer = () => {
              25:00
             </div>
       <div className="center-timer-btn">
-        <TimerButton>Start</TimerButton>
-        <TimerButton>Reset</TimerButton>
+        <Button className="timer-btn">start</Button>
+        <Button className="timer-btn">reset</Button>
+        </div>
       </div>
-      </div>
+        <Button className="add-btn">add tasks</Button>
     </>
   );
 };

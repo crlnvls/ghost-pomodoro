@@ -11,7 +11,7 @@
 
 @media only screen and (min-width: 800px) {
     .timer-display{
-        width: 450px;
+        width: 500px;
     }
 }
 
@@ -25,6 +25,37 @@
     font-size: 25px;
     padding: 10px;
     margin-right: 10px;
+    cursor: pointer;
+}
+
+.line {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 2px;
+}
+
+.hide {
+    display: inline;
+    font-size: 25px;
+    padding: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    
+}
+
+@media only screen and (max-width: 800px) {
+    .hide {
+        display: none;
+       
+    }
+
+    .line {
+        text-decoration: none;
+    }
+
+    .type {
+        cursor:auto;
+    }
 }
 
 .next-btn{
@@ -56,3 +87,4 @@
     justify-content: center;
     align-items: center;
 }
+
