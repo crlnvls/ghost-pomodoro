@@ -8,6 +8,7 @@ import Button from "../Button";
 const Timer = () => {
   return (
     <>
+          <Button className="add-btn">create a task</Button>
       <div className="timer-display">
         <div className="type-display">
             <div className="type line">
@@ -31,7 +32,6 @@ const Timer = () => {
         <Button className="timer-btn">reset</Button>
         </div>
       </div>
-        <Button className="add-btn">add tasks</Button>
     </>
   );
 };
