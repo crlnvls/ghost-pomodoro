@@ -26,4 +26,8 @@
 - [Pomofocus](https://pomofocus.io/)
 - [Viki-code Ghost](https://codepen.io/viki-code/pen/gOqbjLN)
 
+## 📚 Lessons Learned
+
+- How to use, style and add to components SVG images
+
 ## ⚖️ License
