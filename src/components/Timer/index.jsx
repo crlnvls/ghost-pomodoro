@@ -1,33 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
 
 import "./Timer.css"
-import NextSvg from "../NextSvg";
+import TimerType from "../TimerType";
 import Button from "../Button";
 
 
 const Timer = () => {
+
+  const [options, setOptions] = useState([
+    { label: 'pomodoro', time: '25:00' },
+    { label: 'short break', time: '05:00' },
+    { label: 'long break', time: '15:00' },
+  ]);
+
+  const [selectedOption, setSelectedOption] = useState(options[0]);
+  const [active, setActive] = useState(options[0].label)
+
+   const handleSelect = (option) => {
+     setSelectedOption(option);
+     setActive(option)
+  };
+
+
   return (
     <>
-          <Button className="add-btn">create a task</Button>
+      
       <div className="timer-display">
-        <div className="type-display">
-            <div className="type line">
-              pomodoro
-          </div>
-          <div className="hide">
-              short break
-          </div>
-          <div className="hide">
-              long break
-            </div>
-          <button className="next-btn">
-             <NextSvg/>
-            </button>
-        </div>
-            <div className="time">
-             25:00
-            </div>
-      <div className="center-timer-btn">
+        
+        <TimerType handleSelect={handleSelect} active={active} options={options} />
+       
+        <div className="time">{selectedOption.time}</div>
+      
+        <div className="center-timer-btn">
         <Button className="timer-btn">start</Button>
         <Button className="timer-btn">reset</Button>
         </div>

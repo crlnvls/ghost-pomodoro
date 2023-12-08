@@ -20,6 +20,7 @@ const Home = () => {
 
       <div className="center-display">
         <Ghost></Ghost>
+        <Button className="add-btn">create a task</Button>
         <Timer></Timer>
       </div>
       </div>

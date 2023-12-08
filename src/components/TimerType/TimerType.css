@@ -1,0 +1,62 @@
+.timer-display {
+    padding: 15px 50px;
+    text-align: center;
+    border-radius: 10px;
+    color: var(--font-color);
+    width: 50vw;
+    border: 2px solid var(--font-color);
+    background-color: black;
+}
+
+@media only screen and (min-width: 800px) {
+    .timer-display {
+        width: 500px;
+    }
+}
+
+.type-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.type {
+    font-size: 25px;
+    padding: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    background-color: black;
+    border: none;
+    color: var(--font-color);
+}
+
+.line {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 2px;
+}
+
+.hide {
+    display: inline;
+}
+
+@media only screen and (max-width: 800px) {
+    .line {
+        text-decoration: none;
+    }
+
+    .type {
+        cursor: auto;
+    }
+
+    .hide {
+        display: none;
+    }
+}
+
+.next-btn {
+    border: none;
+    padding: 0;
+    background: none;
+    cursor: pointer;
+}
