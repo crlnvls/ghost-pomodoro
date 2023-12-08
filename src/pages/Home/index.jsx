@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./Home.css";
-import NavButton from "../../components/NavButton";
+import Button from "../../components/Button";
 import Ghost from "../../components/Ghost";
 import Timer from "../../components/Timer";
 
@@ -10,10 +10,10 @@ const Home = () => {
     <>
       <div className="center-btn">
         <div className="border-right">
-        <NavButton>History</NavButton>
+        <Button className="nav-btn">history</Button>
         </div>
         <div className="border-left">
-        <NavButton>Settings</NavButton>
+        <Button className="nav-btn">settings</Button>
         </div>
       </div>
       <div className="center-block">
