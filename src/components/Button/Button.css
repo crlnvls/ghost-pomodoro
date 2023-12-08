@@ -1,0 +1,84 @@
+/* Navigation Buttons */
+
+.nav-btn {
+  background-color: black;
+  color: var(--font-color);
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+  width: 100%;
+  padding: 14px 100px;
+  border-top: none ;
+  border-bottom: 2px solid var(--font-color);
+  border-left: 2px solid var(--font-color);
+  border-right: 2px solid var(--font-color);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-family: var(--bs-font-sans-serif)
+}
+
+
+@media only screen and (max-width: 800px){
+  .nav-btn{
+    width: 100%;
+    padding: 14px;
+    border:none;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+}
+
+.nav-btn:hover {
+  color: black;
+  background-color: var(--font-color);
+}
+
+/* Timer Buttons */
+
+.timer-btn {
+  background-color: var(--font-color);
+  color: black;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+  width: 100%;
+  padding: 14px 100px;
+  border: none;
+  margin: 3px;
+  border-radius: 10px;
+  transition: font-size 0.2s ease;
+  font-family: var(--bs-font-sans-serif)
+}
+
+.timer-btn:hover {
+  background-color: var(--hover-color);
+  font-size: 19px;
+}
+
+@media only screen and (max-width: 800px) {
+  .timer-btn {
+    padding: 4% 23%;
+  }
+}
+
+/* Add Task Button */
+
+.add-btn{
+  background-color: var(--font-color);
+  color: black;
+  margin-top: 30px;
+  width: 50vw;
+  padding: 14px 20px;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-family: var(--bs-font-sans-serif)
+}
+
+@media only screen and (min-width: 800px) {
+  .add-btn {
+      width: 450px;
+    }
+}
