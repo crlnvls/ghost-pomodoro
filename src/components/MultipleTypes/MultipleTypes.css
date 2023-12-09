@@ -28,7 +28,10 @@
     background-color: black;
     border: none;
     color: var(--font-color);
+    display: inline;
 }
+
+
 
 .line {
     text-decoration: underline;
@@ -36,27 +39,11 @@
     text-decoration-thickness: 2px;
 }
 
-.hide {
-    display: inline;
-}
 
 @media only screen and (max-width: 800px) {
-    .line {
-        text-decoration: none;
-    }
-
-    .type {
-        cursor: auto;
-    }
-
-    .hide {
+     .type {
         display: none;
     }
+
 }
 
-.next-btn {
-    border: none;
-    padding: 0;
-    background: none;
-    cursor: pointer;
-}

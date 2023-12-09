@@ -1,0 +1,20 @@
+.next-btn {
+    border: none;
+    padding: 0;
+    background: none;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.only-type {
+    font-size: 25px;
+    margin-right: 20px;
+    display: none;
+}
+
+@media only screen and (max-width: 800px) {
+    .only-type {
+        display: inline;
+    }
+
+}

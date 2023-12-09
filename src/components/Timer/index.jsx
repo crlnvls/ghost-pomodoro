@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 
 import "./Timer.css"
-import TimerType from "../TimerType";
+import MultipleTypes from "../MultipleTypes";
+import OneType from "../OneType";
 import Button from "../Button";
 
 
@@ -19,7 +20,13 @@ const Timer = () => {
    const handleSelect = (option) => {
      setSelectedOption(option);
      setActive(option)
+   };
+  
+  const handleNext = (nextOption) => {
+    setSelectedOption(nextOption);
+    setActive(nextOption.label)
   };
+
 
 
   return (
@@ -27,9 +34,11 @@ const Timer = () => {
       
       <div className="timer-display">
         
-        <TimerType handleSelect={handleSelect} active={active} options={options} />
-       
-        <div className="time">{selectedOption.time}</div>
+       <MultipleTypes handleSelect={handleSelect} active={active} options={options}  />
+        <OneType handleNext={handleNext} active={active} options={options} />
+        
+        <div className="time">{selectedOption["time"]}</div>
+     
       
         <div className="center-timer-btn">
         <Button className="timer-btn">start</Button>
