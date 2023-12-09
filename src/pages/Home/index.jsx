@@ -10,19 +10,18 @@ const Home = () => {
     <>
       <div className="center-btn">
         <div className="border-right">
-        <Button className="nav-btn">history</Button>
+          <Button className="nav-btn">history</Button>
         </div>
         <div className="border-left">
-        <Button className="nav-btn">settings</Button>
+          <Button className="nav-btn">settings</Button>
         </div>
       </div>
       <div className="center-block">
-
-      <div className="center-display">
-        <Ghost></Ghost>
-        <Button className="add-btn">create a task</Button>
-        <Timer></Timer>
-      </div>
+        <div className="center-display">
+          <Ghost></Ghost>
+          <Button className="add-btn">create a task</Button>
+          <Timer></Timer>
+        </div>
       </div>
     </>
   );

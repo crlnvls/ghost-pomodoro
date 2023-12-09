@@ -8,21 +8,20 @@
   font-weight: 700;
   width: 100%;
   padding: 14px 100px;
-  border-top: none ;
+  border-top: none;
   border-bottom: 2px solid var(--font-color);
   border-left: 2px solid var(--font-color);
   border-right: 2px solid var(--font-color);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  font-family: var(--bs-font-sans-serif)
+  font-family: var(--bs-font-sans-serif);
 }
 
-
-@media only screen and (max-width: 800px){
-  .nav-btn{
+@media only screen and (max-width: 800px) {
+  .nav-btn {
     width: 100%;
     padding: 14px;
-    border:none;
+    border: none;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
   }
@@ -47,7 +46,7 @@
   margin: 3px;
   border-radius: 10px;
   transition: font-size 0.2s ease;
-  font-family: var(--bs-font-sans-serif)
+  font-family: var(--bs-font-sans-serif);
 }
 
 .timer-btn:hover {
@@ -63,7 +62,7 @@
 
 /* Add Task Button */
 
-.add-btn{
+.add-btn {
   background-color: var(--font-color);
   color: black;
   margin-bottom: 30px;
@@ -74,11 +73,11 @@
   border-radius: 10px;
   border: none;
   cursor: pointer;
-  font-family: var(--bs-font-sans-serif)
+  font-family: var(--bs-font-sans-serif);
 }
 
 @media only screen and (min-width: 800px) {
   .add-btn {
-      width: 500px;
-    }
+    width: 500px;
+  }
 }

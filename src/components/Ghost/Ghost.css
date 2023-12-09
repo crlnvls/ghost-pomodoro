@@ -1,80 +1,79 @@
-  .ghost {
-    background: #fff;
-    width: 117px;
-    height: 150px;
-    border-radius: 100px 100px 0 0;
-    box-shadow: 0 0 50px #fff;
-    position: relative;
-    transform-origin: center;
-    animation: float 3s ease-out infinite;
-    margin-bottom: 70px;
-  }
-  
-  .ghost__eyes {
-    display: flex;
-    gap: 16px;
-    padding-top: 44px;
-    justify-content: center;
-    position: relative;
-  }
-  
-  .ghost__eyes_eye {
-    width: 10px;
-    height: 18px;
-    border: 8px solid #000000;
-    border-radius: 100px;
-    background: #000;
-    border-color: #000;
-    clip-path: none;
-    transition: .1s;
-  }
+.ghost {
+  background: #fff;
+  width: 117px;
+  height: 150px;
+  border-radius: 100px 100px 0 0;
+  box-shadow: 0 0 50px #fff;
+  position: relative;
+  transform-origin: center;
+  animation: float 3s ease-out infinite;
+  margin-bottom: 70px;
+}
 
-  .ghost__waves {
-      display: flex;
-      position: absolute;
-      bottom: -34px;
-      height: 50px;
-      width: 100%;
-      overflow: hidden;
-    }
-  
- .ghost__wave {
-   width: 117px;
-   height: 50px;
-   flex-shrink: 0;
+.ghost__eyes {
+  display: flex;
+  gap: 16px;
+  padding-top: 44px;
+  justify-content: center;
+  position: relative;
+}
 
-   animation: ghost 3s linear infinite;
-   transform: translateX(-117px);
+.ghost__eyes_eye {
+  width: 10px;
+  height: 18px;
+  border: 8px solid #000000;
+  border-radius: 100px;
+  background: #000;
+  border-color: #000;
+  clip-path: none;
+  transition: 0.1s;
+}
 
-   --size: 10px;
-   --p: 5px;
-   --R: 11.18px;
- }
-  
-  @keyframes ghost {
-    0% {
-      transform: translateX(-117px);
-    }
-    100%{
-      transform: translateX(0);
-    }
+.ghost__waves {
+  display: flex;
+  position: absolute;
+  bottom: -34px;
+  height: 50px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.ghost__wave {
+  width: 117px;
+  height: 50px;
+  flex-shrink: 0;
+
+  animation: ghost 3s linear infinite;
+  transform: translateX(-117px);
+
+  --size: 10px;
+  --p: 5px;
+  --R: 11.18px;
+}
+
+@keyframes ghost {
+  0% {
+    transform: translateX(-117px);
   }
-  
-  
-  @keyframes float {
-    50% {
-       transform: translate(0, 20px);
-    }
+  100% {
+    transform: translateX(0);
   }
-  
-  .ghost:hover .ghost__eyes_eye,
-  #ghost.active .ghost__eyes_eye {
-    background: #000;
-    border-color: #000;
-    clip-path: none;
-    height: 16px;
+}
+
+@keyframes float {
+  50% {
+    transform: translate(0, 20px);
   }
-  
-  #ghost.active .ghost {
-    animation: none;
-  }
+}
+
+.ghost:hover .ghost__eyes_eye,
+#ghost.active .ghost__eyes_eye {
+  background: #000;
+  border-color: #000;
+  clip-path: none;
+  height: 16px;
+}
+
+#ghost.active .ghost {
+  animation: none;
+}

@@ -1,49 +1,44 @@
 .timer-display {
-    padding: 15px 50px;
-    text-align: center;
-    border-radius: 10px;
-    color: var(--font-color);
-    width: 50vw;
-    border: 2px solid var(--font-color);
-    background-color: black;
+  padding: 15px 50px;
+  text-align: center;
+  border-radius: 10px;
+  color: var(--font-color);
+  width: 50vw;
+  border: 2px solid var(--font-color);
+  background-color: black;
 }
 
 @media only screen and (min-width: 800px) {
-    .timer-display {
-        width: 500px;
-    }
+  .timer-display {
+    width: 500px;
+  }
 }
 
 .type-display {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .type {
-    font-size: 25px;
-    padding: 10px;
-    margin-right: 10px;
-    cursor: pointer;
-    background-color: black;
-    border: none;
-    color: var(--font-color);
-    display: inline;
+  font-size: 25px;
+  padding: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  background-color: black;
+  border: none;
+  color: var(--font-color);
+  display: inline;
 }
-
-
 
 .line {
-    text-decoration: underline;
-    text-underline-offset: 4px;
-    text-decoration-thickness: 2px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 2px;
 }
-
 
 @media only screen and (max-width: 800px) {
-     .type {
-        display: none;
-    }
-
+  .type {
+    display: none;
+  }
 }
-

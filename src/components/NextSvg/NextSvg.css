@@ -1,32 +1,27 @@
 /* Next Button */
 
 .next-svg {
-   display: none;
+  display: none;
 }
-
 
 @media only screen and (max-width: 800px) {
-    .next-svg {
-        display: inline;
-        width: 20px;
-        height: 20px;
-        transition: font-size 0.2s ease;
-    }
+  .next-svg {
+    display: inline;
+    width: 20px;
+    height: 20px;
+    transition: font-size 0.2s ease;
+  }
 
-    .next-svg path {
-        fill: var(--font-color);
-    }
+  .next-svg path {
+    fill: var(--font-color);
+  }
 
-    .next-svg:hover {
-        width: 21px;
-        height: 21px;
-    }
+  .next-svg:hover {
+    width: 21px;
+    height: 21px;
+  }
 
-    .next-svg path:hover {
-        fill: var(--hover-color);
-    }
+  .next-svg path:hover {
+    fill: var(--hover-color);
+  }
 }
-
-
-
-

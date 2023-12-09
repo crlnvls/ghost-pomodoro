@@ -1,16 +1,17 @@
 * {
-    margin: 0;
+  margin: 0;
 }
 :root {
-    --bg-color:rgba(0, 0, 0, 0.937);
-    --font-color: rgba(240, 248, 255, 0.949);
-    --hover-color: rgb(128, 131, 134);
-    --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bg-color: rgba(0, 0, 0, 0.937);
+  --font-color: rgba(240, 248, 255, 0.949);
+  --hover-color: rgb(128, 131, 134);
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 body {
-    background-color: var(--bg-color);
-    color: var(--font-color);
-    font-family: var(--bs-font-sans-serif)
+  background-color: var(--bg-color);
+  color: var(--font-color);
+  font-family: var(--bs-font-sans-serif);
 }
-
