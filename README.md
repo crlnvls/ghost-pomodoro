@@ -8,6 +8,7 @@
 
 - Select time set
 - Save time set
+- Add custom timer flow
 - Save history of accomplishments (local db or firebase)
 - When user finishes a task - use confetti and possible motivational quotes from APIs
 - When timer finishes - create a Boo Sound and Ghost moving around the screen to alert users
