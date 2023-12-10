@@ -1,22 +1,28 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import "./OneType.css";
 import Button from "../Button";
 import NextSvg from "../NextSvg";
 
-const OneType = ({ options, handleNext }) => {
+const OneType = ({ options, handleSelect, active }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    setCurrentIndex(options.findIndex((option) => option.label === active));
+  }, [active, options]);
 
   const handleNextClick = () => {
     const nextIndex =
       currentIndex === options.length - 1 ? 0 : currentIndex + 1;
     setCurrentIndex(nextIndex);
-    handleNext(options[nextIndex]);
+    handleSelect(options[nextIndex]);
   };
   return (
     <>
       <div className="type-display">
-        <div className="only-type">{options[currentIndex].label}</div>
+        {options.length > 0 && options[currentIndex] && (
+          <div className="only-type">{options[currentIndex].label}</div>
+        )}
         <Button className="next-btn" onClick={handleNextClick}>
           <NextSvg />
         </Button>
