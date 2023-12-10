@@ -23,9 +23,9 @@
 
 ## ✨ Inspiration
 
+- [Viki-code Ghost](https://codepen.io/viki-code/pen/gOqbjLN)
 - [Pomodoro Kitty](https://pomodorokitty.com/)
 - [Pomofocus](https://pomofocus.io/)
-- [Viki-code Ghost](https://codepen.io/viki-code/pen/gOqbjLN)
 - [studywithme.io](https://studywithme.io/aesthetic-pomodoro-timer/)
 
 ## 📚 Lessons Learned
