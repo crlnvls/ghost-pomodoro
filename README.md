@@ -33,3 +33,5 @@
 - How to use, style and add SVG images to components
 
 ## ⚖️ License
+
+GNU General Public License v3.0
