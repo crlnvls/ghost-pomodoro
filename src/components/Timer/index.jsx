@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import "./Timer.css";
 import MultipleTypes from "../MultipleTypes";
@@ -7,40 +7,32 @@ import Button from "../Button";
 
 const Timer = () => {
   const [options, setOptions] = useState([
-    { label: "pomodoro", time: "25:00" },
-    { label: "short break", time: "05:00" },
-    { label: "long break", time: "15:00" },
+    { label: "pomodoro", time: "00:15" },
+    { label: "short break", time: "00:10" },
+    { label: "long break", time: "00:05" },
   ]);
-
-  const pomodoroFlow = [
-    options.pomodoro,
-    options.shortBreak,
-    options.pomodoro,
-    options.shortBreak,
-    options.pomodoro,
-    options.longBreak,
-  ];
 
   const initialOption = options[0];
   const [selectedOption, setSelectedOption] = useState(initialOption);
   const [active, setActive] = useState(initialOption.label);
   const [timer, setTimer] = useState(initialOption.time);
   const [countdown, setCountdown] = useState(null);
-  const [selectedFlow, setSelectedFlow] = useState([]);
+  const [stepIndex, setStepIndex] = useState(0);
 
-  const handleSelect = (option) => {
-    setSelectedOption(option);
-    setActive(option.label);
-    setTimer(option.time);
-    clearInterval(countdown);
-  };
+  const pomodoroFlow = [
+    options[0], // pomodoro
+    options[1], // short break
+    options[0], // pomodoro
+    options[1], // short break
+    options[0], // pomodoro
+    options[2], // long break
+  ];
 
-  const handleNext = (nextOption) => {
-    setSelectedOption(nextOption);
-    setActive(nextOption.label);
-    setTimer(nextOption.time);
-    clearInterval(countdown);
-  };
+  useEffect(() => {
+    if (countdown) {
+      startTimer();
+    }
+  }, [stepIndex]);
 
   const getTimeRemaining = (endTime) => {
     const total = Date.parse(endTime) - Date.parse(new Date());
@@ -54,8 +46,9 @@ const Timer = () => {
   };
 
   const startTimer = () => {
+    const currentOption = pomodoroFlow[stepIndex];
     const endTime = new Date(
-      Date.parse(new Date()) + getMillisecondsFromTime(selectedOption.time)
+      Date.parse(new Date()) + getMillisecondsFromTime(currentOption.time)
     );
     let { total, minutes, seconds } = getTimeRemaining(endTime);
 
@@ -65,6 +58,7 @@ const Timer = () => {
       if (total <= 0) {
         clearInterval(countdown);
         setTimer("00:00");
+        moveToNextStep();
       } else {
         setTimer(
           `${minutes.toString().padStart(2, "0")}:${seconds
@@ -82,14 +76,46 @@ const Timer = () => {
     return (minutes * 60 + seconds) * 1000;
   };
 
+  const moveToNextStep = () => {
+    const nextIndex = stepIndex + 1;
+    if (nextIndex < pomodoroFlow.length) {
+      setStepIndex(nextIndex);
+      setActive(pomodoroFlow[nextIndex].label);
+    } else {
+      console.log("Pomodoro flow completed");
+      // Optionally reset the flow or perform any other action upon completion
+    }
+  };
+
+  const handleSelect = (option) => {
+    setSelectedOption(option);
+    setTimer(option.time);
+    setActive(option.label);
+    setStepIndex(pomodoroFlow.findIndex((item) => item.label === option.label));
+    clearInterval(countdown);
+  };
+
+  const handleNext = (nextOption) => {
+    setSelectedOption(nextOption);
+    setTimer(nextOption.time);
+    setActive(nextOption.label);
+    setStepIndex(
+      pomodoroFlow.findIndex((item) => item.label === nextOption.label)
+    );
+    clearInterval(countdown);
+  };
+
   const onClickStart = () => {
     startTimer();
   };
 
   const onClickReset = () => {
     clearInterval(countdown);
-    setTimer(selectedOption.time);
+    const initialTime = selectedOption.time;
+    setTimer(initialTime);
+    setCountdown(null);
   };
+
   return (
     <>
       <div className="timer-display">
