@@ -7,9 +7,9 @@ import Button from "../Button";
 
 const Timer = () => {
   const [options, setOptions] = useState([
-    { label: "pomodoro", time: "00:15" },
-    { label: "short break", time: "00:10" },
-    { label: "long break", time: "00:05" },
+    { label: "pomodoro", time: "00:05" },
+    { label: "short break", time: "00:03" },
+    { label: "long break", time: "00:02" },
   ]);
 
   const initialOption = options[0];
@@ -51,6 +51,13 @@ const Timer = () => {
       Date.parse(new Date()) + getMillisecondsFromTime(currentOption.time)
     );
     let { total, minutes, seconds } = getTimeRemaining(endTime);
+
+    setTimer(
+      // Set the timer to the initial time of the current countdown
+      `${minutes.toString().padStart(2, "0")}:${seconds
+        .toString()
+        .padStart(2, "0")}`
+    );
 
     const countdown = setInterval(() => {
       ({ total, minutes, seconds } = getTimeRemaining(endTime));
@@ -95,16 +102,6 @@ const Timer = () => {
     clearInterval(countdown);
   };
 
-  const handleNext = (nextOption) => {
-    setSelectedOption(nextOption);
-    setTimer(nextOption.time);
-    setActive(nextOption.label);
-    setStepIndex(
-      pomodoroFlow.findIndex((item) => item.label === nextOption.label)
-    );
-    clearInterval(countdown);
-  };
-
   const onClickStart = () => {
     startTimer();
   };
@@ -124,7 +121,11 @@ const Timer = () => {
           active={active}
           options={options}
         />
-        <OneType handleNext={handleNext} active={active} options={options} />
+        <OneType
+          handleSelect={handleSelect}
+          active={active}
+          options={options}
+        />
 
         <div className="time">{timer}</div>
 
