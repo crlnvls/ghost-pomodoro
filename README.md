@@ -30,6 +30,6 @@
 
 ## 📚 Lessons Learned
 
-- How to use, style and add to components SVG images
+- How to use, style and add SVG images to components
 
 ## ⚖️ License
