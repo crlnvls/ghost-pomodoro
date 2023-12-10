@@ -12,11 +12,21 @@ const Timer = () => {
     { label: "long break", time: "15:00" },
   ]);
 
+  const pomodoroFlow = [
+    options.pomodoro,
+    options.shortBreak,
+    options.pomodoro,
+    options.shortBreak,
+    options.pomodoro,
+    options.longBreak,
+  ];
+
   const initialOption = options[0];
   const [selectedOption, setSelectedOption] = useState(initialOption);
   const [active, setActive] = useState(initialOption.label);
   const [timer, setTimer] = useState(initialOption.time);
   const [countdown, setCountdown] = useState(null);
+  const [selectedFlow, setSelectedFlow] = useState([]);
 
   const handleSelect = (option) => {
     setSelectedOption(option);
