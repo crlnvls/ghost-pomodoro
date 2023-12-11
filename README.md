@@ -6,14 +6,15 @@
 
 ## 🎯 Features
 
-- Select time set
-- Save time set
-- Add custom timer flow
+- Pomodoro times
+- Add custom times and save time set
 - Save history of accomplishments (local db or firebase)
-- When user finishes a task - use confetti and possible motivational quotes from APIs
+- When user finishes a task - use confetti
 - When timer finishes - create a Boo Sound and Ghost moving around the screen to alert users
 - Possibility to add music and/or add a playlist from Spotify API
-- When user click ghost - make it move
+- When user click ghost or when a task is created - make the ghost move and possible motivational quotes from APIs
+- Toggle to default pomodoro flow or to user choose manually
+- Maybe create inputs for timer flow instead of pomodoro flow
 
 ## ⚙️ Installation & Usage
 
