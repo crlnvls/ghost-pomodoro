@@ -59,6 +59,8 @@ const Timer = () => {
         .padStart(2, "0")}`
     );
 
+    const pauserTimer = () => {};
+
     const countdown = setInterval(() => {
       ({ total, minutes, seconds } = getTimeRemaining(endTime));
 
