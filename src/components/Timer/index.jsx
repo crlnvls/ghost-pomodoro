@@ -18,6 +18,7 @@ const Timer = () => {
   const [timer, setTimer] = useState(initialOption.time);
   const [countdown, setCountdown] = useState(null);
   const [stepIndex, setStepIndex] = useState(0);
+  const [isStarted, setIsStarted] = useState(false);
 
   const pomodoroFlow = [
     options[0], // pomodoro
