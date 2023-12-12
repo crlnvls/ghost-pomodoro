@@ -62,6 +62,8 @@ const Timer = () => {
 
     const pauserTimer = () => {};
 
+    const resumeTimer = () => {};
+
     const countdown = setInterval(() => {
       ({ total, minutes, seconds } = getTimeRemaining(endTime));
 
