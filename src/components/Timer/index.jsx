@@ -51,26 +51,26 @@ const Timer = () => {
     const endTime = new Date(
       Date.parse(new Date()) + getMillisecondsFromTime(currentOption.time)
     );
+
     let { total, minutes, seconds } = getTimeRemaining(endTime);
 
     setTimer(
-      // Set the timer to the initial time of the current countdown
       `${minutes.toString().padStart(2, "0")}:${seconds
         .toString()
         .padStart(2, "0")}`
     );
-
-    const pauserTimer = () => {};
-
-    const resumeTimer = () => {};
 
     const countdown = setInterval(() => {
       ({ total, minutes, seconds } = getTimeRemaining(endTime));
 
       if (total <= 0) {
         clearInterval(countdown);
+
         setTimer("00:00");
-        moveToNextStep();
+
+        setTimeout(() => {
+          moveToNextStep();
+        }, 1000);
       } else {
         setTimer(
           `${minutes.toString().padStart(2, "0")}:${seconds
@@ -98,6 +98,10 @@ const Timer = () => {
       // Optionally reset the flow or perform any other action upon completion
     }
   };
+
+  const pauserTimer = () => {};
+
+  const resumeTimer = () => {};
 
   const handleSelect = (option) => {
     setSelectedOption(option);
