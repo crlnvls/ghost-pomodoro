@@ -117,8 +117,8 @@ const Timer = () => {
 
   const onClickReset = () => {
     clearInterval(countdown);
-    const initialTime = selectedOption.time;
-    setTimer(initialTime);
+    const currentOption = pomodoroFlow[stepIndex];
+    setTimer(currentOption.time);
     setCountdown(null);
   };
 
