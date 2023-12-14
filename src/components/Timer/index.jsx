@@ -139,9 +139,16 @@ const Timer = () => {
         <div className="time">{timer}</div>
 
         <div className="center-timer-btn">
-          <Button className="timer-btn" onClick={onClickStart}>
-            start
-          </Button>
+          {isStarted ? (
+            <Button className="timer-btn" onClick={onClickStart}>
+              start
+            </Button>
+          ) : (
+            <Button className="timer-btn" onClick={onClickStart}>
+              pause
+            </Button>
+          )}
+
           <Button className="timer-btn" onClick={onClickReset}>
             reset
           </Button>
