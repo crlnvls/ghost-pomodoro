@@ -32,6 +32,7 @@
 ## 📚 Lessons Learned
 
 - How to use, style and add SVG images to components
+- How to create and use custom hooks
 
 ## ⚖️ License
 
