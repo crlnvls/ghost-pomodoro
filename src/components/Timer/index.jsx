@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
+
 import { DEFAULT_OPTIONS, POMODORO_FLOW } from "../../constants/index";
+import useTimeRemaining from "../../hooks/useTimeRemaining";
 
 import "./Timer.css";
 import MultipleLabels from "../MultipleLabels";
@@ -33,15 +35,9 @@ const Timer = () => {
     }
   }, [stepIndex]);
 
-  const getTimeRemaining = (endTime) => {
-    const total = Date.parse(endTime) - Date.parse(new Date());
-    const seconds = Math.floor((total / 1000) % 60);
-    const minutes = Math.floor((total / 1000 / 60) % 60);
-    return {
-      total,
-      minutes,
-      seconds,
-    };
+  const getMillisecondsFromTime = (time) => {
+    const [minutes, seconds] = time.split(":").map(Number);
+    return (minutes * 60 + seconds) * 1000;
   };
 
   const startTimer = () => {
@@ -52,7 +48,7 @@ const Timer = () => {
 
     setEndTime(calculatedEndTime);
 
-    let { total, minutes, seconds } = getTimeRemaining(calculatedEndTime);
+    let { total, minutes, seconds } = useTimeRemaining(calculatedEndTime);
 
     setTimer(
       `${minutes.toString().padStart(2, "0")}:${seconds
@@ -61,7 +57,7 @@ const Timer = () => {
     );
 
     const countdown = setInterval(() => {
-      ({ total, minutes, seconds } = getTimeRemaining(calculatedEndTime));
+      ({ total, minutes, seconds } = useTimeRemaining(calculatedEndTime));
 
       if (total <= 0) {
         clearInterval(countdown);
@@ -82,11 +78,6 @@ const Timer = () => {
 
     setCountdown(countdown);
     setIsStarted(true);
-  };
-
-  const getMillisecondsFromTime = (time) => {
-    const [minutes, seconds] = time.split(":").map(Number);
-    return (minutes * 60 + seconds) * 1000;
   };
 
   const moveToNextStep = () => {
@@ -113,7 +104,7 @@ const Timer = () => {
 
     setEndTime(newEnd);
 
-    let { total, minutes, seconds } = getTimeRemaining(newEnd);
+    let { total, minutes, seconds } = useTimeRemaining(newEnd);
 
     setTimer(
       `${minutes.toString().padStart(2, "0")}:${seconds
@@ -125,7 +116,7 @@ const Timer = () => {
     setIsStarted(true);
 
     const countdown = setInterval(() => {
-      ({ total, minutes, seconds } = getTimeRemaining(newEnd));
+      ({ total, minutes, seconds } = useTimeRemaining(newEnd));
 
       if (total <= 0) {
         clearInterval(countdown);
