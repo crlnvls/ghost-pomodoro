@@ -1,12 +1,12 @@
 import React from "react";
 
-import "./NextSvg.css";
+import "./NextButton.css";
 
-const NextSvg = () => {
+const NextButton = () => {
   return (
     <>
       <svg
-        className="next-svg"
+        className="next-button"
         fill="#000000"
         height="800px"
         width="800px"
@@ -32,4 +32,4 @@ const NextSvg = () => {
   );
 };
 
-export default NextSvg;
+export default NextButton;

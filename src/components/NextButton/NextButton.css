@@ -1,27 +1,27 @@
 /* Next Button */
 
-.next-svg {
+.next-button {
   display: none;
 }
 
 @media only screen and (max-width: 800px) {
-  .next-svg {
+  .next-button {
     display: inline;
     width: 20px;
     height: 20px;
     transition: font-size 0.2s ease;
   }
 
-  .next-svg path {
+  .next-button path {
     fill: var(--font-color);
   }
 
-  .next-svg:hover {
+  .next-button:hover {
     width: 21px;
     height: 21px;
   }
 
-  .next-svg path:hover {
+  .next-button path:hover {
     fill: var(--hover-color);
   }
 }

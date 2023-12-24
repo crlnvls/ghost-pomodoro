@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 import "./OneLabel.css";
 import Button from "../Button";
-import NextSvg from "../NextSvg";
+import NextButton from "../NextButton";
 
 const OneType = ({ options, handleSelect, active }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -24,7 +24,7 @@ const OneType = ({ options, handleSelect, active }) => {
           <div className="one-label">{options[currentIndex].label}</div>
         )}
         <Button className="next-btn" onClick={handleNextClick}>
-          <NextSvg />
+          <NextButton />
         </Button>
       </div>
     </>
