@@ -1,25 +1,27 @@
 import React from "react";
-import "./MultipleTypes.css";
+
+import "./MultipleLabels.css";
+
 import Button from "../Button";
 
-const MultipleTypes = ({ handleSelect, active, options }) => {
+const MultipleLabels = ({ handleSelect, active, options }) => {
   return (
     <>
-      <div className="type-display">
+      <div className="label-display">
         <Button
-          className={`type ${active === options[0].label ? "line" : ""}`}
+          className={`label ${active === options[0].label ? "line" : ""}`}
           onClick={() => handleSelect(options[0])}
         >
           pomodoro
         </Button>
         <Button
-          className={`type ${active === options[1].label ? "line" : ""}`}
+          className={`label ${active === options[1].label ? "line" : ""}`}
           onClick={() => handleSelect(options[1])}
         >
           short break
         </Button>
         <Button
-          className={`type ${active === options[2].label ? "line" : ""}`}
+          className={`label ${active === options[2].label ? "line" : ""}`}
           onClick={() => handleSelect(options[2])}
         >
           long break
@@ -29,4 +31,4 @@ const MultipleTypes = ({ handleSelect, active, options }) => {
   );
 };
 
-export default MultipleTypes;
+export default MultipleLabels;

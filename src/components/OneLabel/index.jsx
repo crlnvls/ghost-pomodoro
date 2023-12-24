@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-import "./OneType.css";
+import "./OneLabel.css";
 import Button from "../Button";
 import NextSvg from "../NextSvg";
 
@@ -19,9 +19,9 @@ const OneType = ({ options, handleSelect, active }) => {
   };
   return (
     <>
-      <div className="type-display">
+      <div className="label-display">
         {options.length > 0 && options[currentIndex] && (
-          <div className="only-type">{options[currentIndex].label}</div>
+          <div className="one-label">{options[currentIndex].label}</div>
         )}
         <Button className="next-btn" onClick={handleNextClick}>
           <NextSvg />

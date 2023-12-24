@@ -14,13 +14,13 @@
   }
 }
 
-.type-display {
+.label-display {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.type {
+.label {
   font-size: 25px;
   padding: 10px;
   margin-right: 10px;
@@ -38,7 +38,7 @@
 }
 
 @media only screen and (max-width: 800px) {
-  .type {
+  .label {
     display: none;
   }
 }

@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import { DEFAULT_OPTIONS, POMODORO_FLOW } from "../../constants/index";
 
 import "./Timer.css";
-import MultipleTypes from "../MultipleTypes";
-import OneType from "../OneType";
+import MultipleLabels from "../MultipleLabels";
+import OneLabel from "../OneLabel";
 import Button from "../Button";
 
 const Timer = () => {
@@ -182,12 +182,12 @@ const Timer = () => {
   return (
     <>
       <div className="timer-display">
-        <MultipleTypes
+        <MultipleLabels
           handleSelect={handleSelect}
           active={active}
           options={options}
         />
-        <OneType
+        <OneLabel
           handleSelect={handleSelect}
           active={active}
           options={options}
