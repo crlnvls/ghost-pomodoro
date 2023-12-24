@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 
 import { DEFAULT_OPTIONS, POMODORO_FLOW } from "../../constants/index";
 import useTimeRemaining from "../../hooks/useTimeRemaining";
+import useMillisecondsFromTime from "../../hooks/useMillisecondsFromTime";
 
 import "./Timer.css";
 import MultipleLabels from "../MultipleLabels";
@@ -35,15 +36,10 @@ const Timer = () => {
     }
   }, [stepIndex]);
 
-  const getMillisecondsFromTime = (time) => {
-    const [minutes, seconds] = time.split(":").map(Number);
-    return (minutes * 60 + seconds) * 1000;
-  };
-
   const startTimer = () => {
     const currentOption = POMODORO_FLOW[stepIndex];
     const calculatedEndTime = new Date(
-      Date.parse(new Date()) + getMillisecondsFromTime(currentOption.time)
+      Date.parse(new Date()) + useMillisecondsFromTime(currentOption.time)
     );
 
     setEndTime(calculatedEndTime);
