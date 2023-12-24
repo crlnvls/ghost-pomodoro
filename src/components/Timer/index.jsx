@@ -7,14 +7,22 @@ import OneType from "../OneType";
 import Button from "../Button";
 
 const Timer = () => {
+  // Time Options
   const [options, setOptions] = useState(DEFAULT_OPTIONS);
 
+  // Initial Time - pomodoro
   const initialOption = options[0];
+
+  // Selected Option
   const [selectedOption, setSelectedOption] = useState(initialOption);
   const [active, setActive] = useState(initialOption.label);
   const [timer, setTimer] = useState(initialOption.time);
+
+  // Countdown and Flow states
   const [countdown, setCountdown] = useState(null);
   const [stepIndex, setStepIndex] = useState(0);
+
+  // Start, Pause and Resume states
   const [isStarted, setIsStarted] = useState(false);
   const [remainingTime, setRemainingTime] = useState(0);
   const [endTime, setEndTime] = useState(null);
