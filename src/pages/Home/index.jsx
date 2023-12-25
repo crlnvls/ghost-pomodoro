@@ -4,19 +4,15 @@ import "./Home.css";
 import Button from "../../components/Button";
 import Ghost from "../../components/Ghost";
 import Timer from "../../components/Timer";
-import Modal from "../../components/Modal";
 import HistoryPopup from "../../components/HistoryPopup";
+import SettingsPopup from "../../components/SettingsPopup";
 
 const Home = () => {
   return (
     <>
       <div className="center-btn">
         <HistoryPopup></HistoryPopup>
-        <div className="border-left">
-          <Modal
-            trigger={<Button className="nav-btn">settings</Button>}
-          ></Modal>
-        </div>
+        <SettingsPopup></SettingsPopup>
       </div>
       <div className="center-block">
         <div className="center-display">

@@ -10,11 +10,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-
-  .border-left {
-    border-left: 1px solid var(--font-color);
-    border-bottom: 2px solid var(--font-color);
-  }
 }
 
 .center-display {

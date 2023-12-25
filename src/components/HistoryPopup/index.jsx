@@ -6,7 +6,7 @@ import Button from "../../components/Button";
 
 const HistoryPopup = () => {
   const headerContent = "History";
-  const bodyContent = "AAAA";
+  const bodyContent = "";
   return (
     <>
       <div className="border-right">

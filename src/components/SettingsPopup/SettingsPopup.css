@@ -1,0 +1,6 @@
+@media only screen and (max-width: 800px) {
+  .border-left {
+    border-left: 1px solid var(--font-color);
+    border-bottom: 2px solid var(--font-color);
+  }
+}
