@@ -4,16 +4,19 @@ import "./Home.css";
 import Button from "../../components/Button";
 import Ghost from "../../components/Ghost";
 import Timer from "../../components/Timer";
+import Modal from "../../components/Modal";
 
 const Home = () => {
   return (
     <>
       <div className="center-btn">
         <div className="border-right">
-          <Button className="nav-btn">history</Button>
+          <Modal trigger={<Button className="nav-btn">history</Button>}></Modal>
         </div>
         <div className="border-left">
-          <Button className="nav-btn">settings</Button>
+          <Modal
+            trigger={<Button className="nav-btn">settings</Button>}
+          ></Modal>
         </div>
       </div>
       <div className="center-block">
