@@ -5,14 +5,13 @@ import Button from "../../components/Button";
 import Ghost from "../../components/Ghost";
 import Timer from "../../components/Timer";
 import Modal from "../../components/Modal";
+import HistoryPopup from "../../components/HistoryPopup";
 
 const Home = () => {
   return (
     <>
       <div className="center-btn">
-        <div className="border-right">
-          <Modal trigger={<Button className="nav-btn">history</Button>}></Modal>
-        </div>
+        <HistoryPopup></HistoryPopup>
         <div className="border-left">
           <Modal
             trigger={<Button className="nav-btn">settings</Button>}
