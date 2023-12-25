@@ -83,7 +83,6 @@ const Timer = () => {
       setActive(POMODORO_FLOW[nextIndex].label);
     } else {
       console.log("Pomodoro flow completed");
-      // Optionally reset the flow or perform any other action upon completion
     }
   };
 
