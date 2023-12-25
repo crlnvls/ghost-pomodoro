@@ -33,6 +33,7 @@
 
 - How to use, style and add SVG images to components
 - How to create and use custom hooks
+- How to use reactjs-popup library
 
 ## ⚖️ License
 
