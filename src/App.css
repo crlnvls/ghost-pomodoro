@@ -2,9 +2,9 @@
   margin: 0;
 }
 :root {
-  --bg-color: rgba(0, 0, 0, 0.937);
-  --font-color: rgba(240, 248, 255, 0.949);
-  --hover-color: rgb(128, 131, 134);
+  --bg-color: #000000ef;
+  --font-color: #f8f8ff;
+  --hover-color: #808386;
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
