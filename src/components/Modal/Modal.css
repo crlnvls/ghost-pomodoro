@@ -1,20 +1,22 @@
 .modal {
   font-size: 12px;
-  background-color: var(--font-color);
+  background-color: black;
   width: 50vw;
   height: 400px;
-  margin-top: 150px;
+  margin-top: 200px;
+  border-radius: var(--border-radius);
+  border: 2px solid var(--font-color);
 }
 .modal > .header {
   font-size: 18px;
   text-align: center;
   padding: 5px;
-  color: black;
+  color: var(--font-color);
 }
 .modal > .content {
   width: 100%;
   padding: 10px 5px;
-  color: black;
+  color: var(--font-color);
 }
 .modal > .actions {
   width: 100%;

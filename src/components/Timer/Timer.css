@@ -1,7 +1,7 @@
 .timer-display {
   padding: 15px 50px;
   text-align: center;
-  border-radius: 10px;
+  border-radius: var(--border-radius);
   color: var(--font-color);
   width: 50vw;
   border: 2px solid var(--font-color);

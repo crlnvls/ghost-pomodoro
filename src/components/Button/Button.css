@@ -44,7 +44,7 @@
   padding: 14px 100px;
   border: none;
   margin: 3px;
-  border-radius: 10px;
+  border-radius: var(--border-radius);
   transition: font-size 0.2s ease;
   font-family: var(--bs-font-sans-serif);
 }
@@ -70,7 +70,7 @@
   padding: 14px 20px;
   font-size: 18px;
   font-weight: 700;
-  border-radius: 10px;
+  border-radius: var(--border-radius);
   border: none;
   cursor: pointer;
   font-family: var(--bs-font-sans-serif);
