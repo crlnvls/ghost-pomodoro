@@ -3,6 +3,8 @@ import Popup from "reactjs-popup";
 
 import "./Modal.css";
 
+// Add to trigger btn when clicked to stay "white" unless closed popup
+
 const Modal = (props) => {
   return (
     <>
