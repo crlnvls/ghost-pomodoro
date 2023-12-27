@@ -15,6 +15,7 @@
 - When user click ghost or when a task is created - make the ghost move and possible motivational quotes from APIs
 - Toggle to default pomodoro flow or to user choose manually
 - Maybe create inputs for timer flow instead of pomodoro flow
+- Add unit tests
 
 ## ⚙️ Installation & Usage
 
