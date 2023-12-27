@@ -6,7 +6,7 @@
 
 ## 🎯 Features
 
-- Pomodoro times
+- Add Pomodoro Flow to automatic change timer ✅
 - Add custom times and save time set
 - Save history of accomplishments (local db or firebase)
 - When user finishes a task - use confetti
